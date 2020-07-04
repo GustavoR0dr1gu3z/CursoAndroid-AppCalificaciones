@@ -7,80 +7,139 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/Saludo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="Registro de Calificaciones"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/Status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="Status del Alumno"
+        android:layout_marginTop="16dp"
+        android:text="Status"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintHorizontal_bias="0.108"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Saludo" />
-
-    <EditText
-        android:id="@+id/Matematicas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:ems="10"
-        android:hint="Matemáticas"
-        android:inputType="number"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Status" />
-
-    <EditText
-        android:id="@+id/Fisica"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:hint="Física"
-        android:inputType="number"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Matematicas" />
-
-    <EditText
-        android:id="@+id/Quimica"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:hint="Química"
-        android:inputType="number"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Fisica" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Promedio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:onClick="Promedio"
         android:text="Calcular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Quimica"
-        app:layout_constraintVertical_bias="0.46" />
+        app:layout_constraintTop_toBottomOf="@+id/electronica"
+        app:layout_constraintVertical_bias="0.825" />
+
+    <EditText
+        android:id="@+id/redes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Modelo de Redes"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/Status"
+        tools:layout_editor_absoluteX="40dp" />
+
+    <EditText
+        android:id="@+id/compiladores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Compiladores"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/redes"
+        tools:layout_editor_absoluteX="40dp" />
+
+    <EditText
+        android:id="@+id/sistemas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Teoria de Sistemas"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/compiladores"
+        tools:layout_editor_absoluteX="40dp" />
+
+    <EditText
+        android:id="@+id/sgbd"
+        android:layout_width="145dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="SGBD"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/sistemas"
+        tools:layout_editor_absoluteX="40dp" />
+
+    <EditText
+        android:id="@+id/multimedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Multimedia"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/sgbd"
+        tools:layout_editor_absoluteX="40dp" />
+
+    <EditText
+        android:id="@+id/operativos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Sistemas Operativos"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/multimedia"
+        tools:layout_editor_absoluteX="40dp" />
+
+    <EditText
+        android:id="@+id/tratamiento"
+        android:layout_width="146dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Tratamiento  Imagenes"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/operativos"
+        tools:layout_editor_absoluteX="40dp" />
+
+    <EditText
+        android:id="@+id/algebra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Algebra Lineal"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/tratamiento"
+        tools:layout_editor_absoluteX="39dp" />
+
+    <EditText
+        android:id="@+id/electronica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Electronica Digital"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/algebra"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="39dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
